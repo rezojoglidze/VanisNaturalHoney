@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#20C7951F">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:onClick="onClick"
+                android:id="@+id/helpIconOnClick"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:src="@drawable/help_icon"></ImageView>
+
+            <TextView
+                android:id="@+id/showTextMainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+
+                android:text="@string/choose_honey_to_buy"
+                android:gravity="center"></TextView>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/mayhoney"></ImageView>
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:layout_weight="1"
+                   android:paddingRight="8dp"
+                   android:src="@drawable/chesnuthoneyjar"></ImageView>
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/mayhoneycomb"></ImageView>
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/chesnuthoneycomb"></ImageView>
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/mayHoneyNumberOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:hint="მაისი"></EditText>
+
+                <EditText
+                    android:id="@+id/chesnutHoneyNumberOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="წაბლი"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingLeft="8dp"></EditText>
+
+                <EditText
+                    android:id="@+id/mayHoneyCombNumberOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="მაისის ფიჭა"
+                    android:textSize="13dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"></EditText>
+                <EditText
+                    android:id="@+id/chesnutHoneyCombNumberOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="წაბლის ფიჭა"
+                    android:textSize="13dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"></EditText>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:onClick="whatsAppClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/whats_app_icon"
+                android:layout_marginTop="8dp"></ImageView>
+
+            <ImageView
+                android:onClick="smsAppClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/sms_app_icon"
+                android:layout_marginTop="8dp"></ImageView>
+        </LinearLayout>
+            <Button
+                android:onClick="allOrderPriceGenerationButtonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ჯამური ფასის გამოთვლა"></Button>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="end">
+        <ImageView
+            android:onClick="onClick"
+            android:id="@+id/socialIconClick"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/messengercallicon"></ImageView>
+    </LinearLayout>
+</FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:background="#f3ce92">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="მთავარი"
+            android:textSize="16dp"
+            android:layout_marginLeft="4dp"
+            android:background="#f3ce92"
+            android:gravity="center"></Button>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/priceButtonClick"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="ფასები"
+            android:textSize="16dp"
+            android:background="#f3ce92"></Button>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/photoButtonClick"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="ფოტო"
+            android:textSize="16dp"
+            android:background="#f3ce92"></Button>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/menuButtonClick"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f3ce92"
+            android:text="მენიუ"
+            android:textSize="16dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

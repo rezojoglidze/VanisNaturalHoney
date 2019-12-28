@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#20C7951F"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/showImageDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bee"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mayhoney"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:padding="15dp"
+                android:src="@drawable/mayhoney" />
+
+            <ImageView
+                android:id="@+id/chesnuthoneyjar"
+                android:src="@drawable/chesnuthoneyjar"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <ImageView
+                android:id="@+id/mayhoneycomb"
+                android:src="@drawable/mayhoneycomb"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <ImageView
+                android:id="@+id/chesnuthoneycomb"
+                android:src="@drawable/chesnuthoneycomb"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+            <ImageView
+                android:id="@+id/nature"
+                android:src="@drawable/nature"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+            <ImageView
+                android:id="@+id/manychesnuthoneycomb"
+                android:src="@drawable/manychesnuthoneycomb"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+            <ImageView
+                android:id="@+id/naturearoundbees"
+                android:src="@drawable/naturearoundbees"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+            <ImageView
+                android:id="@+id/beeswaxphoto"
+                android:src="@drawable/beeswaxphoto"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
+</ScrollView>

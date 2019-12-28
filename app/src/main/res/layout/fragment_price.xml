@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+   <ImageView
+       android:id="@+id/honeyImageCategory"
+       android:layout_width="wrap_content"
+       android:layout_height="200dp"
+       android:src="@drawable/bees"></ImageView>
+    <TextView
+        android:id="@+id/honeyCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:textSize="18dp"></TextView>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="15dp">
+    <Button
+        android:id="@+id/setMayHoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="მაისის თაფლი"></Button>
+    <Button
+        android:id="@+id/setChesnutHoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="წაბლის თაფლი"></Button>
+    <Button
+        android:id="@+id/setMayHoneyComb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="მაისის ფიჭა"></Button>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/setChesnutHoneyComb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="წაბლის ფიჭა"></Button>
+    </LinearLayout>
+
+</LinearLayout>

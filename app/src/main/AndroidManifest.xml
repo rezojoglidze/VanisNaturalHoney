@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vanisnaturalhoney">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher_background"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_launcher_background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HelloPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivityForMenu.BaseActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".menuclick.AboutAppActivity"></activity>
+        <activity android:name=".photoclick.PhotoActivity"></activity>
+        <activity android:name=".menuclick.AboutUsActivity"></activity>
+        <activity android:name=".priceclick.PriceActivity"></activity>
+        <activity android:name=".popClass.PopClassSocialMediaActivity"
+            android:theme="@style/AppTheme.CustomThemePop"></activity>
+        <activity android:name=".popClass.PopClassHelpActivity"
+            android:theme="@style/AppTheme.CustomThemePop"></activity>
+
+
+    </application>
+
+</manifest>
