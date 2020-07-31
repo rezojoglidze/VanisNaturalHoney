@@ -77,10 +77,6 @@ public class PopClassSocialMediaActivity extends AppCompatActivity {
         });
     }
 
-
-
-
-
     class PopClassSocialMediaItemAdapter extends ArrayAdapter<popClassSocialMediaItem> {
         private Context mContext;
 
@@ -122,8 +118,6 @@ public class PopClassSocialMediaActivity extends AppCompatActivity {
         }
     }
 
-
-//view view აკლია
     public void fbIconClick() {
         goToFacebookPage("460768061354807");
     }
@@ -141,7 +135,7 @@ public class PopClassSocialMediaActivity extends AppCompatActivity {
         }
         startActivity(intent);
     }
-    //makeCall permission
+    //Call permission
     @Override
     public void onRequestPermissionsResult ( int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
         if (requestCode == REQUEST_CALL) {

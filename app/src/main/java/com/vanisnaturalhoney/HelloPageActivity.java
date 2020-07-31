@@ -30,24 +30,7 @@ public class HelloPageActivity extends AppCompatActivity {
                 finish();
             }
         },SPLASH_TIME_OUT);
-
-
     }
-
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//
-//        // Create Welcome Screen (Splash Screen) in Android Studio
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                Intent intent=new Intent(HelloPageActivity.this,MainActivity.class);
-//                startActivity(intent);
-//                //  finish();
-//            }
-//        },SPLASH_TIME_OUT);
-//    }
 }
 
 

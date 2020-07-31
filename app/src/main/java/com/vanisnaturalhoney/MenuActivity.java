@@ -71,8 +71,6 @@ public class MenuActivity extends BaseActivity {
     }
 
 
-
-
     class MenuItemAdapter extends ArrayAdapter<MenuItem> {
         private Context mContext;
 
@@ -109,13 +107,10 @@ public class MenuActivity extends BaseActivity {
         public int getIcon() {
             return icon;
         }
-
         public String getName() {
             return name;
         }
     }
-
-
 
     public void makeCallClick (){
         Intent intent = new Intent(Intent.ACTION_CALL);
@@ -126,7 +121,7 @@ public class MenuActivity extends BaseActivity {
         }
         startActivity(intent);
     }
-    //makeCall permission
+    //call permission
     @Override
     public void onRequestPermissionsResult ( int requestCode, @NonNull String[] permissions,
                                              @NonNull int[] grantResults){
@@ -136,5 +131,4 @@ public class MenuActivity extends BaseActivity {
             }
         }
     }
-     //String string=String.format("dafasd %S %S" firsname, lastname);
 }

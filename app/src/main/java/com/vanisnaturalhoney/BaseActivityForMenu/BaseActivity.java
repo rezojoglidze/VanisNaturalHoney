@@ -16,10 +16,6 @@ public class BaseActivity extends AppCompatActivity {
         Log.d(BaseActivity.class.getName(), "OnCReate");
     }
 
-    protected void showText(String text) {
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
-    }
-
     protected void startActivity(Class kClass) {
         Intent intent = new Intent(this, kClass);
         startActivity(intent);

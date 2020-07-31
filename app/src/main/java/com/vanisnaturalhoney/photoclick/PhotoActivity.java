@@ -20,7 +20,6 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_photo);
         showImageDisplay = findViewById(R.id.showImageDisplay);
 
-
         ImageView mayHoney = findViewById(R.id.mayhoney);
         ImageView chesnutHoneyJar = findViewById(R.id.chesnuthoneyjar);
         ImageView mayHoneyComb = findViewById(R.id.mayhoneycomb);
@@ -29,7 +28,6 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
         ImageView naturearoundbees = findViewById(R.id.naturearoundbees);
         ImageView manychesnuthoneycomb = findViewById(R.id.manychesnuthoneycomb);
         ImageView beeswaxphoto = findViewById(R.id.beeswaxphoto);
-
 
         nature.setOnClickListener(this);
         naturearoundbees.setOnClickListener(this);
@@ -41,8 +39,6 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
         chesnutHoneyComb.setOnClickListener(this);
 
     }
-
-
 
     public void onClick(View v)
     {
